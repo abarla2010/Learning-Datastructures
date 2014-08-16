@@ -3,7 +3,6 @@ package lists;
 import common.SinglyLinkedListNode;
 
 /**
- *
  * Singly Linked List Implementation Class
  */
 public class SinglyLinkedList {

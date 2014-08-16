@@ -1,0 +1,34 @@
+# Eclipse
+.project
+.settings
+.classpath
+.externalToolBuilders
+
+# IntelliJ
+.idea
+*.iml
+*.svn
+out
+# Maven
+target
+.eclipse-pmd
+.pmd
+# XCode
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+DerivedData
+*.xcworkspace
+xcuserdata
+profile
+*.hg
+/.hg/*
+dist/
+
+# Other
+.DS_Store
+.history
+*.swp

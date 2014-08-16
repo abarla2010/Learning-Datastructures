@@ -1,11 +1,11 @@
 package lists;
 
 import common.DoublyLinkedListNode;
+import iterator.LinkedListIterator;
 
 import java.util.NoSuchElementException;
 
 /**
- *
  * Doubly Linked List Impl Class
  */
 public class DoublyLinkedList {
@@ -114,6 +114,22 @@ public class DoublyLinkedList {
 			tail = tempNode;
 		}
 		count--;
+	}
+
+	/**
+	 * Method to return the first node
+	 * @return
+	 */
+	public DoublyLinkedListNode getFirst(){
+		return head;
+	}
+
+	/**
+	 * Method to return the last node
+	 * @return
+	 */
+	public DoublyLinkedListNode getLast(){
+		return tail;
 	}
 
 	/**
@@ -344,5 +360,13 @@ public class DoublyLinkedList {
 		}
 
 		return finalString;
+	}
+
+	/**
+	 * Method to get the iterator for this class
+	 * @return
+	 */
+	public LinkedListIterator getIterator(){
+		return new LinkedListIterator(this);
 	}
 }

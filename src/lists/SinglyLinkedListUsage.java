@@ -3,7 +3,6 @@ package lists;
 import java.util.LinkedList;
 
 /**
- *
  * Singly Linked list usage class
  */
 public class SinglyLinkedListUsage {

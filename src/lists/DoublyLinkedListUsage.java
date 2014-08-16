@@ -1,9 +1,10 @@
 package lists;
 
+import iterator.LinkedListIteratorInterface;
+
 import java.util.LinkedList;
 
 /**
- *
  * Doubly LinkedList usage class
  */
 public class DoublyLinkedListUsage {
@@ -45,9 +46,25 @@ public class DoublyLinkedListUsage {
 		//doublyLinkedList.add(14,13);
 		//doublyLinkedList.removeLast();*/
 
-
-
 		System.out.println(doublyLinkedList.toString() + " Size : " + doublyLinkedList.getSize());
 
+
+
+		DoublyLinkedList doublyLinkedList1 = new DoublyLinkedList();
+		doublyLinkedList1.add(1);
+		doublyLinkedList1.add(2);
+		doublyLinkedList1.add(3);
+		doublyLinkedList1.add(4);
+
+		LinkedListIteratorInterface linkedListIterator = doublyLinkedList1.getIterator();
+		System.out.println("Printing forward....");
+		while(linkedListIterator.hasNext()){
+			System.out.print(linkedListIterator.next() + " ");
+		}
+		System.out.println();
+		System.out.println("Printing backward....");
+		while(linkedListIterator.hasPrevious()){
+			System.out.print(linkedListIterator.previous() + " ");
+		}
 	}
 }
