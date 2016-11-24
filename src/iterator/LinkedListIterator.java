@@ -53,7 +53,6 @@ public class LinkedListIterator implements LinkedListIteratorInterface {
 	 * Method to check if the list has a previous element
 	 * @return
 	 */
-	@Override
 	public boolean hasPrevious() {
 		return currentLast != null;
 	}
@@ -62,7 +61,6 @@ public class LinkedListIterator implements LinkedListIteratorInterface {
 	 * Method to get the previous element
 	 * @return
 	 */
-	@Override
 	public Object previous() {
 		temp = currentLast;
 		currentLast = currentLast.previous;
