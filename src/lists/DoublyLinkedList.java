@@ -33,23 +33,13 @@ public class DoublyLinkedList {
 	public void add(Object inputData){
 
 		DoublyLinkedListNode inputNode = new DoublyLinkedListNode(inputData);
-		DoublyLinkedListNode tempNode = null;
 
 		//Adding the first element
 		if(head==null){
 			head = inputNode;
 			tail = head;
 		}
-		//For the second element
-		else if(count==1){
-			tempNode = tail;
-			tail.next = inputNode;
-			inputNode.previous = tail;
-			tail = inputNode;
-			tail.previous = head;
-		}
 		else{
-			tempNode = tail;
 			tail.next = inputNode;
 			inputNode.previous = tail;
 			tail = inputNode;

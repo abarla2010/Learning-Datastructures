@@ -51,9 +51,6 @@ public class HashMapImpl<K,V> {
 		//Hash the key
 		hashCode = getIndex(key);
 
-		//Find out the corresponding bucket in which the key lies
-		index = hashCode % numberOfBuckets;
-
 		//Get the value to which the key corresponds, from the bucket
 		head = bucketList.get(index);
 		current = head;
